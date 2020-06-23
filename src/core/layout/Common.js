@@ -65,6 +65,7 @@ props.marginY,
 )}px;`};
   ${props => props.flex && `flex: ${props.flex};`};
   ${props => props.width && `width: ${props.width};`};
+  ${props => props.height && `height: ${props.height};`};
   ${props => props.multiline && `flex-wrap: wrap`};
 
   ${props =>
