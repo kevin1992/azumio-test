@@ -64,6 +64,7 @@ props.marginY &&
 props.marginY,
 )}px;`};
   ${props => props.flex && `flex: ${props.flex};`};
+  ${props => props.width && `width: ${props.width};`};
   ${props => props.multiline && `flex-wrap: wrap`};
 
   ${props =>
@@ -93,5 +94,7 @@ props.bkgImage &&
   &.hover {
     ${`cursor: pointer `};
   }
+  
+  ${props => props.textCenter ? 'text-align:center;' : ''}
 `;
 
